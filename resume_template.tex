@@ -1,0 +1,99 @@
+\documentclass[12pt,letter]{article}
+\usepackage{geometry}
+\geometry{paperwidth=8.5in, paperheight=11in, margin=1in}
+\usepackage[T1]{fontenc}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{luacode}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{Times New Roman}
+\pagestyle{empty}
+\titlespacing*{\section}{0pt}{0.6ex}{0.4ex}
+\titlespacing*{\subsection}{0pt}{0.5ex}{0.3ex}
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\setlist[itemize]{nosep}
+
+\newcommand\company[2]{\noindent{\Large\setlength\parskip{0em}\textbf{#1} --- #2}}
+\newcommand\position[2]{\noindent{\large\setlength\parskip{0em}\textit{\textbf{#1} (#2)}}}
+\newcommand\hrul{\noindent\rule{\linewidth}{0.4pt}}
+
+%create data structures outside of the document and then use directlua later on
+\begin{luacode*}
+    local tex_special_characters = {
+        ["\\"] = "\\textbackslash{}",
+        ["{"] = "\\{",
+        ["}"] = "\\}",
+        ["$"] = "\\$",
+        ["&"] = "\\&",
+        ["#"] = "\\#",
+        ["%"] = "\\%",
+        ["_"] = "\\_",
+        ["^"] = "\\textasciicircum{}",
+        ["~"] = "\\textasciitilde{}"
+    }
+
+    function tex_escape(value)
+        return (tostring(value):gsub("([\\{}$&#%%_^~])", function(character)
+            return tex_special_characters[character]
+        end))
+    end
+
+    function tex_escape_with_linebreaks(value)
+        local escaped = tex_escape(value):gsub("\r\n", "\n"):gsub("\r", "\n")
+        return (escaped:gsub("\n+", "\\\\"))
+    end
+
+    resume_data = require("data\\resume_data")
+\end{luacode*}
+
+\begin{document}
+\noindent\Large\textbf{\directlua{tex.print(tex_escape(resume_data.name))}}\\
+\normalsize{\directlua{tex.print(tex_escape(resume_data.contact.email))}|\directlua{tex.print(tex_escape(resume_data.contact.phone))}}\\
+\normalsize{\href{\directlua{tex.print(resume_data.contact.linkedIn)}}{LinkedIn}|\href{\directlua{tex.print(resume_data.contact.github)}}{GitHub}}\\
+\hrul
+\section*{Summary}
+\normalsize
+\directlua{tex.print(tex_escape_with_linebreaks(resume_data.summary))}\\
+\hrul
+\section*{Career History}
+\directlua{
+    for i, company in ipairs(resume_data.career_history) do
+        tex.print("\\company{" .. tex_escape(company.company) .. "}{" .. tex_escape(company.period) .. "}\\\\")
+        for j, position in ipairs(company.positions) do
+            tex.print("\\position{" .. tex_escape(position.title) .. "}{" .. tex_escape(position.period) .. "}\\\\")
+            for k, accomplishment in ipairs(position.accomplishments) do
+                if accomplishment.header ~= "" then
+                    tex.print("\\subsection*{" .. tex_escape(accomplishment.header) .. "}")
+                end
+                tex.print("\\begin{itemize}")
+                for l, item in ipairs(accomplishment.items) do
+                    tex.print("\\item " .. tex_escape(item))
+                end
+                tex.print("\\end{itemize}")
+            end
+        end
+    end
+} 
+\hrul
+% in my dataset, "skills" are broken out by sections
+\directlua{
+    for i, skill_section in ipairs(resume_data.skills) do
+        tex.print("\\section*{" .. tex_escape(skill_section.name) .. "}")
+        tex.print("\\begin{itemize}")
+        for j, item in ipairs(skill_section.items) do
+            tex.print("\\item " .. tex_escape(item))
+        end
+        tex.print("\\end{itemize}")
+    end
+}
+\hrul
+\section*{Education}
+\directlua{
+    for i, education in ipairs(resume_data.education) do
+        tex.print(tex_escape(education.institution) .. " --- "  .. tex_escape(education.degree) .. " (" .. tex_escape(education.period) .. ")\\\\ ")
+    end
+}
+\end{document}

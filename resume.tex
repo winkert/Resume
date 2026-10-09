@@ -5,8 +5,7 @@
 \usepackage{fontspec}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage[none]{hyphenat}
-\usepackage{ragged2e}
+\usepackage[hidelinks]{hyperref}
 \setmainfont{Times New Roman}
 \pagestyle{empty}
 \titlespacing*{\section}{0pt}{0.6ex}{0.4ex}
@@ -14,14 +13,14 @@
 \titleformat*{\section}{\Large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 \setlist[itemize]{nosep}
-\newcommand\company[2]{\noindent{\Large \setlength\parskip{0em} \textbf{#1} --- #2}}
-\newcommand\position[2]{\noindent{\large\setlength\parskip{0em} \textit{\textbf{#1} (#2)}}}
+\newcommand\company[2]{\noindent{\Large\setlength\parskip{0em}\textbf{#1} --- #2}}
+\newcommand\position[2]{\noindent{\large\setlength\parskip{0em}\textit{\textbf{#1} (#2)}}}
 \newcommand\hrul{\noindent\rule{\linewidth}{0.4pt}}
 
 \begin{document}
-\RaggedRight
 \noindent\large\textbf{Thaddeus R. Winker}\\
 Phone: (314) 477-7246 | Email: trwinker@gmail.com\\
+\href{https://www.linkedin.com/in/trwinker}{LinkedIn} | \href{https://github.com/winkert}{GitHub}\\
 \hrul
 \section*{Summary}
 \noindent Operations and Software Engineering leader with over a decade of experience supporting and scaling large, distributed software systems across hybrid onprem and cloud architectures. Over 2 years managing large, distributed technical teams across onshore and offshore locations. Customer and user facing leader who has built trust and satisfaction into the daily operations and redesigned support operations, eliminating repetitive ticket work, coaching engineers, and deploying AI and automation where they create real operational leverage. Experienced in service desk operations, end‑user support, ticket triage, escalation management, and cross‑functional coordination with Infrastructure, Networking, Cybersecurity, and Operations teams.
@@ -54,13 +53,9 @@ Tech Stack: C\# .Net, SQL, CI/CD, GIT, Azure DevOps, Full Stack
 \end{itemize}
 \subsection*{AI, Automation \& Developer Productivity}
 \begin{itemize}
-\item Led transition to a squad-based model, improving ownership, autonomy, and delivery velocity.
-\item Designed and implemented a 24/7 on call rotation, establishing clear escalation paths and improving response consistency.
-\item Developed runbooks, SOPs, and troubleshooting guides to improve technician readiness and reduce repeat issues.
-\item Partnered with infrastructure, networking, operations, client services, and product stakeholders to deliver reliable platform changes and resolve high-impact system issues.
-\item Built executive-recognized Jira Cloud dashboards and advanced filters that improved visibility into team capacity, throughput, work intake, and delivery risk.
-\item Partnered with executive leadership and strategic enablement leaders to develop reporting tools, assess capacity against work intake, and plan operational changes for the team.
-\item Led four-week sprint planning with QA and technical leads, balancing planned fixes and enhancements with capacity for escalations, production support, code cutoffs，and QA cutoffs.
+\item Introduced AI-based error classification and remediation guidance to reduce investigation time and senior-engineer dependency.",
+\item Trained engineers on ML.Net and AI-assisted root-cause analysis, turning individual experimentation into repeatable team-owned tooling.
+\item Identified repetitive incident patterns and redesigned support workflows using machine learning, standard procedures, and operator training to reduce manual investigation and improve team independence.
 \end{itemize}
 
 \position{Senior Software Engineer, Production Support}{Oct 2021 -- Apr 2024}
@@ -99,7 +94,7 @@ Tech Stack: JQuery, SQL, Stingray IDE, Full Stack
 \item Gathered requirements and tested billing and accounting functionality of UE@Work
 \end{itemize}
 \hrul
-\company{Now You Know Media}{May 2013 -- May 2014}
+\company{Now You Know Media}{May 2013 -- May 2014}\\
 \position{Assistant Producer}{May 2013 -- May 2014}\\
 \begin{itemize}
 \item Assisted in the production of media content, including video and audio materials.
