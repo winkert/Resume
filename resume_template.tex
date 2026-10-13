@@ -7,6 +7,7 @@
 \usepackage{enumitem}
 \usepackage{luacode}
 \usepackage[hidelinks]{hyperref}
+\usepackage[none]{hyphenat}
 
 \setmainfont{Times New Roman}
 \pagestyle{empty}
@@ -14,7 +15,8 @@
 \titlespacing*{\subsection}{0pt}{0.5ex}{0.3ex}
 \titleformat*{\section}{\Large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
-\setlist[itemize]{nosep}
+
+\renewcommand{\labelitemi}{-}
 
 \newcommand\company[2]{\noindent{\Large\setlength\parskip{0em}\textbf{#1} --- #2}}
 \newcommand\position[2]{\noindent{\large\setlength\parskip{0em}\textit{\textbf{#1} (#2)}}}
@@ -49,10 +51,15 @@
     resume_data = require("data\\resume_data")
 \end{luacode*}
 
+\hypersetup{
+    pdflang={en-US},
+    pdfauthor={\directlua{tex.print(tex_escape(resume_data.name))}},
+    pdftitle={Resume}
+}
+
 \begin{document}
 \noindent\Large\textbf{\directlua{tex.print(tex_escape(resume_data.name))}}\\
-\normalsize{\directlua{tex.print(tex_escape(resume_data.contact.email))}|\directlua{tex.print(tex_escape(resume_data.contact.phone))}}\\
-\normalsize{\href{\directlua{tex.print(resume_data.contact.linkedIn)}}{LinkedIn}|\href{\directlua{tex.print(resume_data.contact.github)}}{GitHub}}\\
+\normalsize{\directlua{tex.print(tex_escape(resume_data.contact.email))} \; | \; \directlua{tex.print(tex_escape(resume_data.contact.phone))} \hfill \href{\directlua{tex.print(resume_data.contact.linkedIn)}}{LinkedIn} \; | \; \href{\directlua{tex.print(resume_data.contact.github)}}{GitHub}}\\
 \hrul
 \section*{Summary}
 \normalsize
@@ -62,13 +69,16 @@
 \directlua{
     for i, company in ipairs(resume_data.career_history) do
         tex.print("\\company{" .. tex_escape(company.company) .. "}{" .. tex_escape(company.period) .. "}\\\\")
+        if company.techStack ~= "" then
+            tex.print("Tech Stack: " .. tex_escape(company.techStack) .. "\\\\")
+        end
         for j, position in ipairs(company.positions) do
-            tex.print("\\position{" .. tex_escape(position.title) .. "}{" .. tex_escape(position.period) .. "}\\\\")
+            tex.print("\\position{" .. tex_escape(position.title) .. "}{" .. tex_escape(position.period) .. "}")
             for k, accomplishment in ipairs(position.accomplishments) do
                 if accomplishment.header ~= "" then
                     tex.print("\\subsection*{" .. tex_escape(accomplishment.header) .. "}")
                 end
-                tex.print("\\begin{itemize}")
+                tex.print("\\begin{itemize}[noitemsep]")
                 for l, item in ipairs(accomplishment.items) do
                     tex.print("\\item " .. tex_escape(item))
                 end
@@ -82,7 +92,7 @@
 \directlua{
     for i, skill_section in ipairs(resume_data.skills) do
         tex.print("\\section*{" .. tex_escape(skill_section.name) .. "}")
-        tex.print("\\begin{itemize}")
+        tex.print("\\begin{itemize}[noitemsep]")
         for j, item in ipairs(skill_section.items) do
             tex.print("\\item " .. tex_escape(item))
         end

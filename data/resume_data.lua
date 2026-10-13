@@ -6,12 +6,12 @@ return {
         linkedIn = "https://www.linkedin.com/in/trwinker",
         github = "https://github.com/winkert"
     },
-    summary = [=[Operations and Software Engineering leader with over a decade of experience supporting and scaling large, distributed software systems across hybrid onprem and cloud architectures. Over 2 years managing large, distributed technical teams across onshore and offshore locations. Customer and user facing leader who has built trust and satisfaction into the daily operations and redesigned support operations, eliminating repetitive ticket work, coaching engineers, and deploying AI and automation where they create real operational leverage. Experienced in service desk operations, end‑user support, ticket triage, escalation management, and cross‑functional coordination with Infrastructure, Networking, Cybersecurity, and Operations teams.
-Brings a strong diagnostic foundation from early help desk experience, combined with modern leadership of Tier 2/3 support organizations in highly regulated, client‑sensitive environments. Known for improving service delivery, reducing resolution times, strengthening communication standards, and developing high‑ performing support teams. Hands‑on experience with system administration, server configuration, and troubleshooting user‑impacting issues across hybrid on‑prem/cloud environments.]=],
+    summary = [=[Operations and software engineering leader with more than a decade of experience guiding large, distributed technical organizations and improving service delivery in complex, regulated environments. He has led onshore and offshore engineering teams, strengthened incident response and escalation practices, redesigned support operations to eliminate repetitive work, and built high‑performing Tier 2/3 groups through structured coaching, clear ownership models, and continuous improvement. His leadership includes implementing squad‑based workflows, establishing 24/7 on‑call rotations, developing runbooks and SOPs, enhancing cross‑functional coordination, and creating executive‑level reporting that improves visibility into capacity, throughput, and delivery risk. Known for elevating team autonomy, accelerating resolution times, and driving organizational change, he blends operational discipline with a people‑focused approach that advances engineers, improves communication standards, and scales systems and teams in fast‑growth environments.]=],
     career_history = {
         {
             company = "Zelis(Formerly RedCard)",
             period = "Jan 2017 -- Present",
+            techStack = "C# .Net, SQL, CI/CD, GIT, Azure DevOps, Full Stack ",
             positions = {
                 {
                     title = "Manager, Software Engineering",
@@ -22,30 +22,30 @@ Brings a strong diagnostic foundation from early help desk experience, combined 
                             header = "Team Coaching & Leadership",
                             items = 
                             {
-                                "Managed and coached 10+ engineers across onshore and offshore teams, providing technical direction, career development, hiring support, and performance feedback.",
-                                "Advanced 5+ engineers through targeted coaching, structured growth plans, and increased technical ownership."
+                                "Led a 10+ person onshore and offshore engineering team, providing clear direction, structured coaching, and consistent performance management.",
+                                "Developed engineers through targeted growth plans, increasing ownership, autonomy, and readiness for higher‑level responsibilities.",
+                                "Strengthened team culture by establishing expectations, improving communication standards, and creating predictable, supportive leadership rhythms."
                             }
                         },
                         {
                             header = "Operational Improvements & Process Management",
                             items = 
                             {
-                                "Led transition to a squad-based model, improving ownership, autonomy, and delivery velocity.",
-                                "Designed and implemented a 24/7 on call rotation, establishing clear escalation paths and improving response consistency.",
-                                "Developed runbooks, SOPs, and troubleshooting guides to improve technical readiness and reduce repeat issues",
-                                "Partnered with infrastructure, networking, operations, client services, and product stakeholders to delivery reliable platform changes and resolve high-impact system issues.",
-                                "Built executive-recognized Jira Cloud dashboards and advanced filters that improved visibility into team capacity, throughput, work intake, and delivery risk.",
-                                "Partnered with executive leadership and strategic enablement leaders to develop reporting tools, assess capacity against work intake, and plan operational changes for the team.",
-                                "Led four-week sprint planning with QA and technical leads balancing planned fixes and enhancements with capacity for escalations, production support, code cutoofs, and QA cutoffs."
+                                "Reorganized the team into a squad‑based operating model, improving accountability, delivery flow, and cross‑team coordination.",
+                                "Built and implemented a 24/7 on‑call program with defined escalation paths, improving response consistency and reducing operational risk.",
+                                "Created runbooks, SOPs, and troubleshooting guides that raised technical readiness and reduced repeat incidents.",
+                                "Partnered across Infrastructure, Networking, Operations, Client Services, and Product to deliver reliable platform changes and resolve high‑impact issues.",
+                                "Produced executive‑recognized Jira dashboards and reporting that improved visibility into capacity, throughput, and delivery risk.",
+                                "Worked with senior leadership to assess team capacity, refine intake processes, and plan strategic operational changes.",
+                                "Led structured sprint planning cycles balancing planned work with production support, escalations, and release constraints."
                             }
                         },
                         {
                             header = "AI, Automation & Developer Productivity",
                             items = 
                             {
-                                "Introduced AI-based error classification and remediation guidance to reduce investigation time and senior-engineer dependency.",
-                                "Trained engineers on ML.Net and AI-assisted root-cause analysis, turning individual experimentation into repeatable team-owned tooling.",
-                                "Identified repetitive incident patterns and redesigned support workflows using machine learning, standard procedures, and operator training to reduce manual investigation and improve team independence."
+                                "Introduced AI‑based error classification and remediation guidance, reducing investigation time and reliance on senior engineers.",
+                                "Redesigned support workflows using machine learning, SOP alignment, and operator training to reduce manual investigation and increase team independence."
                             }
                         }
                     }
@@ -107,6 +107,7 @@ Brings a strong diagnostic foundation from early help desk experience, combined 
         {
             company = "United Educators",
             period = "Feb 2016 -- Dec 2016",
+            techStack = "JQuery, SQL, Stingray IDE, Full Stack",
             positions = {
                 {
                     title = "Associated Software Developer",
@@ -129,6 +130,7 @@ Brings a strong diagnostic foundation from early help desk experience, combined 
         {
             company = "Elite Personnel (For United Educators)",
             period = "Jun 2014 -- Feb 2016",
+            techStack = "",
             positions = {
                 {
                     title = "Quality Assurance Engineer",
@@ -139,8 +141,7 @@ Brings a strong diagnostic foundation from early help desk experience, combined 
                             header = "",
                             items = 
                             {
-                                "Gathered requirements and tested billing and accounting functionality of UE@Work.",
-                                ""
+                                "Gathered requirements and tested billing and accounting functionality of UE@Work."
                             }
                         }
 
@@ -151,6 +152,7 @@ Brings a strong diagnostic foundation from early help desk experience, combined 
         {
             company = "Now You Know Media",
             period = "May 2013 -- Jun 2014",
+            techStack = "",
             positions = {
                 {
                     title = "Assistant Producer",
@@ -175,25 +177,24 @@ Brings a strong diagnostic foundation from early help desk experience, combined 
             name = "Leadership & Operational Management",
             items = {
                 "Engineering team leadership (onshore & offshore)",
-                "Incident response ownership & escalation management",
-                "Production operations & reliability management",
-                "Hiring, performance management, and career development",
-                "Budget ownership, compensation planning, and staffing strategy for engineering teams",
-                "Cross functional coordination with Infrastructure, Networking, and Operations",
-                "Process design, continuous improvement, and organizational change leadership",
-                "Experience leading engineering teams in highly regulated, client-sensitive environments",
-                "Scaling systems and teams in fast-growth organizations"
+                "Incident response, escalation management, and communication standards",
+                "Production operations, service reliability, and support readiness",
+                "Hiring, performance management, coaching, and career development",
+                "Capacity planning, staffing strategy, and budget ownership",
+                "Cross‑functional coordination with Infrastructure, Networking, Operations, Client Services, and Product",
+                "Process design, workflow optimization, and continuous improvement",
+                "Organizational change leadership in regulated, client‑sensitive environments",
+                "Scaling teams, support models, and operational systems in fast‑growth settings"
             }
         },
         {
             name = "Systems & Reliability Expertise",
             items = {
-                "Large scale, client facing web applications",
-                "Distributed and legacy system support",
+                "Large scale, client facing distributed systems",
+                "Hybrid on-prem and cloud system support and legacy system maintenance",
                 "Production incident triage, root cause analysis, and remediation",
-                "Technical debt management in operational environments",
-                "AI enabled incident analysis and workflow automation",
-                "Secure application design and operational risk management"
+                "Operational risk management and secure system practices",
+                "AI‑enabled incident analysis, workflow automation, and ML‑driven support tooling"
             }
         },
         {
@@ -204,8 +205,8 @@ Brings a strong diagnostic foundation from early help desk experience, combined 
                 "FTP Server management",
                 "Jira (JSM, Cloud, Datacenter, Confluence)",
                 "Microsoft Teams Workflows",
-                "Powershell",
-                "C#/.NET (.NET Framework and .NET Core)",
+                "Powershell, LaTex, Lua, Markdown, and other scripting languages",
+                "C#, C++, Python, Object Oriented Programming",
                 "SQL & relational database design",
                 "Distributed Systems (WCF, gRPC)",
                 "Version control (Git)",

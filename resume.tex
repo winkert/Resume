@@ -6,60 +6,64 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
+\usepackage[none]{hyphenat}
+
 \setmainfont{Times New Roman}
 \pagestyle{empty}
 \titlespacing*{\section}{0pt}{0.6ex}{0.4ex}
 \titlespacing*{\subsection}{0pt}{0.5ex}{0.3ex}
 \titleformat*{\section}{\Large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
-\setlist[itemize]{nosep}
+
+\renewcommand{\labelitemi}{-}
 \newcommand\company[2]{\noindent{\Large\setlength\parskip{0em}\textbf{#1} --- #2}}
 \newcommand\position[2]{\noindent{\large\setlength\parskip{0em}\textit{\textbf{#1} (#2)}}}
 \newcommand\hrul{\noindent\rule{\linewidth}{0.4pt}}
 
+
+\hypersetup{
+    pdflang={en-US},
+    pdfauthor={Thaddeus R. Winker},
+    pdftitle={Resume}
+}
+
 \begin{document}
 \noindent\large\textbf{Thaddeus R. Winker}\\
-Phone: (314) 477-7246 | Email: trwinker@gmail.com\\
-\href{https://www.linkedin.com/in/trwinker}{LinkedIn} | \href{https://github.com/winkert}{GitHub}\\
+Phone: (314) 477-7246 \; | \; Email: trwinker@gmail.com\\ \hfill \href{https://www.linkedin.com/in/trwinker}{LinkedIn} \; | \; \href{https://github.com/winkert}{GitHub}\\
 \hrul
 \section*{Summary}
-\noindent Operations and Software Engineering leader with over a decade of experience supporting and scaling large, distributed software systems across hybrid onprem and cloud architectures. Over 2 years managing large, distributed technical teams across onshore and offshore locations. Customer and user facing leader who has built trust and satisfaction into the daily operations and redesigned support operations, eliminating repetitive ticket work, coaching engineers, and deploying AI and automation where they create real operational leverage. Experienced in service desk operations, end‑user support, ticket triage, escalation management, and cross‑functional coordination with Infrastructure, Networking, Cybersecurity, and Operations teams.
-
-\noindent Brings a strong diagnostic foundation from early help desk experience, combined with modern leadership of Tier 2/3 support organizations in highly regulated, client‑sensitive environments. Known for improving service delivery, reducing resolution times, strengthening communication standards, and developing high‑ performing support teams. Hands‑on experience with system administration, server configuration, and troubleshooting user‑impacting issues across hybrid on‑prem/cloud environments.
+\noindent Operations and software engineering leader with more than a decade of experience guiding large, distributed technical organizations and improving service delivery in complex, regulated environments. He has led onshore and offshore engineering teams, strengthened incident response and escalation practices, redesigned support operations to eliminate repetitive work, and built high‑performing Tier 2/3 groups through structured coaching, clear ownership models, and continuous improvement. His leadership includes implementing squad‑based workflows, establishing 24/7 on‑call rotations, developing runbooks and SOPs, enhancing cross‑functional coordination, and creating executive‑level reporting that improves visibility into capacity, throughput, and delivery risk. Known for elevating team autonomy, accelerating resolution times, and driving organizational change, he blends operational discipline with a people‑focused approach that advances engineers, improves communication standards, and scales systems and teams in fast‑growth environments.
 
 \hrul
 \section*{Career History}
 
 \company{Zelis(Formerly RedCard)}{Jan 2017 -- Present}\\
 Tech Stack: C\# .Net, SQL, CI/CD, GIT, Azure DevOps, Full Stack 
-
-\noindent Progressed from product development into production support to take on technical leadership for customer-impacting systems, using product engineering experience to improve support workflows, reduce escalations, guide engineers, and drive reliability improvements across a distributed platform.
-
 \position{Manager, Software Engineering}{Apr 2024 -- Present}
 \subsection*{Team Coaching \& Leadership}
-\begin{itemize}
-\item Managed and coached 10+ engineers across onshore and offshore teams, providing technical direction, career development, hiring support, and performance feedback.
-\item Advanced 5+ engineers through targeted coaching, structured growth plans, and increased technical ownership.
+\begin{itemize}[noitemsep]
+\item Led a 10+ person onshore and offshore engineering team, providing clear direction, structured coaching, and consistent performance management.
+\item Developed engineers through targeted growth plans, increasing ownership, autonomy, and readiness for higher‑level responsibilities.
+\item Strengthened team culture by establishing expectations, improving communication standards, and creating predictable, supportive leadership rhythms.
 \end{itemize}
 \subsection*{Operational Improvements \& Process Management}
-\begin{itemize}
-\item Led transition to a squad-based model, improving ownership, autonomy, and delivery velocity.
-\item Designed and implemented a 24/7 on call rotation, establishing clear escalation paths and improving response consistency.
-\item Developed runbooks, SOPs, and troubleshooting guides to improve technician readiness and reduce repeat issues.
-\item Partnered with infrastructure, networking, operations, client services, and product stakeholders to deliver reliable platform changes and resolve high-impact system issues.
-\item Built executive-recognized Jira Cloud dashboards and advanced filters that improved visibility into team capacity, throughput, work intake, and delivery risk.
-\item Partnered with executive leadership and strategic enablement leaders to develop reporting tools, assess capacity against work intake, and plan operational changes for the team.
-\item Led four-week sprint planning with QA and technical leads, balancing planned fixes and enhancements with capacity for escalations, production support, code cutoffs, and QA cutoffs.
+\begin{itemize}[noitemsep]
+\item Reorganized the team into a squad‑based operating model, improving accountability, delivery flow, and cross‑team coordination.
+\item Built and implemented a 24/7 on‑call program with defined escalation paths, improving response consistency and reducing operational risk.
+\item Created runbooks, SOPs, and troubleshooting guides that raised technical readiness and reduced repeat incidents.
+\item Partnered across Infrastructure, Networking, Operations, Client Services, and Product to deliver reliable platform changes and resolve high‑impact issues.
+\item Produced executive‑recognized Jira dashboards and reporting that improved visibility into capacity, throughput, and delivery risk.
+\item Worked with senior leadership to assess team capacity, refine intake processes, and plan strategic operational changes.
+\item Led structured sprint planning cycles balancing planned work with production support, escalations, and release constraints.
 \end{itemize}
 \subsection*{AI, Automation \& Developer Productivity}
-\begin{itemize}
-\item Introduced AI-based error classification and remediation guidance to reduce investigation time and senior-engineer dependency.",
-\item Trained engineers on ML.Net and AI-assisted root-cause analysis, turning individual experimentation into repeatable team-owned tooling.
-\item Identified repetitive incident patterns and redesigned support workflows using machine learning, standard procedures, and operator training to reduce manual investigation and improve team independence.
+\begin{itemize}[noitemsep]
+\item Introduced AI‑based error classification and remediation guidance, reducing investigation time and reliance on senior engineers.
+\item Redesigned support workflows using machine learning, SOP alignment, and operator training to reduce manual investigation and increase team independence.
 \end{itemize}
 
 \position{Senior Software Engineer, Production Support}{Oct 2021 -- Apr 2024}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item Provided Tier 3 support for complex user‑impacting issues across a large distributed system.
 \item Performed administrative operations on production servers to resolve urgent issues affecting internal and external users.
 \item Led root‑cause analysis efforts and partnered with Infrastructure and Engineering teams to remediate recurring problems.
@@ -69,68 +73,67 @@ Tech Stack: C\# .Net, SQL, CI/CD, GIT, Azure DevOps, Full Stack
 \end{itemize}
 
 \position{Software Engineer}{Nov 2017 -- Oct 2021}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item Partnered with business users, analysts, and management to translate requirements into software solutions for healthcare payment and financial document workflows.
 \item Developed systems for health insurance payment and financial document processing in a highly regulated healthcare technology environment.
 \end{itemize}
 
 \position{Associate Software Engineer}{Jan 2017 -- Nov 2017}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item Troubleshot production issues on a large-scale distributed system
 \item Reviewed peer code and tested changes 
 \end{itemize}
-\hrul
+\hrul\\
 \company{United Educators}{Feb 2016 -- Dec 2016}\\
 \position{Associate Software Developer}{Feb 2016 -- Dec 2016}\\
 Tech Stack: JQuery, SQL, Stingray IDE, Full Stack
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item Resolved production issues for UE@Work
 \item Developed new features and requirements 
 \end{itemize}
-\hrul
+\hrul\\
 \company{Elite Personnel (for United Educators)}{Jun 2014 -- Feb 2016}\\
 \position{Quality Assurance Engineer}{Jun 2014 -- Feb 2016}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item Gathered requirements and tested billing and accounting functionality of UE@Work
 \end{itemize}
-\hrul
+\hrul\\
 \company{Now You Know Media}{May 2013 -- May 2014}\\
 \position{Assistant Producer}{May 2013 -- May 2014}\\
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item Assisted in the production of media content, including video and audio materials.
 \item Built a Microsoft Access royalty-payment system and provided internal technical support
 \end{itemize}
-\hrul
+\hrul\\
 \section*{Leadership \& Operational Management}
-\begin{itemize}
-\item Engineering team leadership (onshore \& offshore)
-\item Incident response ownership \& escalation management
-\item Production operations \& reliability management
-\item Hiring, performance management, and career development
-\item Budget ownership, compensation planning, and staffing strategy for engineering teams
-\item Cross functional coordination with Infrastructure, Networking, and Operations
-\item Process design, continuous improvement, and organizational change leadership
-\item Experience leading engineering teams in highly regulated, client-sensitive environments
-\item Scaling systems and teams in fast-growth organizations
+\begin{itemize}[noitemsep]
+\item Engineering team leadership (onshore \& offshore)",
+\item Incident response, escalation management, and communication standards
+\item Production operations, service reliability, and support readiness
+\item Hiring, performance management, coaching, and career development
+\item Capacity planning, staffing strategy, and budget ownership
+\item Cross‑functional coordination with Infrastructure, Networking, Operations, Client Services, and Product
+\item Process design, workflow optimization, and continuous improvement
+\item Organizational change leadership in regulated, client‑sensitive environments
+\item Scaling teams, support models, and operational systems in fast‑growth settings
 \end{itemize}
 \section*{Systems \& Reliability Expertise}
-\begin{itemize}
-\item Large scale, client facing web applications
-\item Distributed and legacy system support
+\begin{itemize}[noitemsep]
+\item Large scale, client facing distributed systems",
+\item Hybrid on-prem and cloud system support and legacy system maintenance
 \item Production incident triage, root cause analysis, and remediation
-\item Technical debt management in operational environments
-\item AI enabled incident analysis and workflow automation
-\item Secure application design and operational risk management
+\item Operational risk management and secure system practices
+\item AI‑enabled incident analysis, workflow automation, and ML‑driven support tooling
 \end{itemize}
 \section*{Technical Foundations}
-\begin{itemize}
+\begin{itemize}[noitemsep]
 \item Windows server administration
 \item IIS Configuration
 \item FTP Server management
 \item Jira (JSM, Cloud, Datacenter, Confluence)
 \item Microsoft Teams Workflows
-\item Powershell
-\item C\#/.NET (.NET Framework and .NET Core)
+\item Powershell, LaTex, Lua, Markdown, and other scripting languages
+\item C\#, C++, Python, Object Oriented Programming
 \item SQL \& relational database design
 \item Distributed Systems (WCF, gRPC)
 \item Version control (Git)
