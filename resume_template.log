@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.10.5)  12 OCT 2026 23:31
+This is LuaHBTeX, Version 1.25.7 (MiKTeX 26.5) (format=lualatex 2026.10.5)  5 NOV 2026 21:52
  restricted system commands enabled.
 **resume_template.tex
 (./resume_template.tex
@@ -495,31 +495,49 @@ Overfull \hbox (0.17625pt too wide) in paragraph at lines 12--13
  []
 
 
-Overfull \hbox (25.65984pt too wide) in paragraph at lines 18--19
-[]\TU/TimesNewRoman(0)/m/n/12 Led struc-tured sprint plan-ning cy-cles bal-anc-i
-ng planned work with pro-duc-tion sup-port, es-ca-la-tions,
+Overfull \hbox (29.2907pt too wide) in paragraph at lines 18--19
+[]\TU/TimesNewRoman(0)/m/n/12 Fa-cil-i-tated work plan-ning and pri-or-i-ti-za-t
+ion pro-cesses that bal-anced strate-gic ini-tia-tives, op-er-a-tional
  []
 
 [1
 
 {C:/Users/maste/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Overfull \hbox (0.11081pt too wide) in paragraph at lines 23--24
+Overfull \hbox (31.10826pt too wide) in paragraph at lines 19--20
+[]\TU/TimesNewRoman(0)/m/n/12 Served as pri-mary co-or-di-na-tion point be-tween
+ en-gi-neer-ing teams and in-ter-nal busi-ness stake-hold-ers,
+ []
+
+
+Overfull \hbox (0.37822pt too wide) in paragraph at lines 19--20
+\TU/TimesNewRoman(0)/m/n/12 man-ag-ing in-take, clar-i-fy-ing re-quire-ments, ne
+-go-ti-at-ing pri-or-i-ties, and com-mu-ni-cat-ing de-liv-ery
+ []
+
+
+Overfull \hbox (24.36455pt too wide) in paragraph at lines 20--21
+[]\TU/TimesNewRoman(0)/m/n/12 Reg-u-larly com-mu-ni-cated project sta-tus, risks
+, de-pen-den-cies, and re-source con-straints to lead-er-ship
+ []
+
+
+Overfull \hbox (0.11081pt too wide) in paragraph at lines 25--26
 []\TU/TimesNewRoman(0)/m/n/12 Re-designed sup-port work-flows us-ing ma-chine le
 arn-ing, SOP align-ment, and op-er-a-tor train-ing
  []
 
 
-Overfull \hbox (11.18797pt too wide) in paragraph at lines 36--37
+Overfull \hbox (11.18797pt too wide) in paragraph at lines 38--39
 []\TU/TimesNewRoman(0)/m/n/12 Part-nered with busi-ness users, an-a-lysts, and 
 man-age-ment to trans-late re-quire-ments into soft-ware
  []
 
-[2]
+[2] [3]
 Underfull \hbox (badness 10000) in paragraph at lines 1--109
 
  []
 
-[3] (./resume_template.aux)
+[4] (./resume_template.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-09-09>
@@ -529,20 +547,20 @@ Package rerunfilecheck Info: File `resume_template.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 11406 strings out of 475604
+ 11407 strings out of 475604
  125036,953878 words of node,token memory allocated
  431 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 53 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 2:409,3:279,4:5,5:257,6:64,7:9997,8:2,9:307,10:4,11:1010
+   avail lists: 2:497,3:292,4:5,5:265,6:73,7:10011,8:2,9:300,10:4,11:1032
  34175 multiletter control sequences out of 65536+600000
  34 fonts using 12937423 bytes
  71i,5n,92p,1177b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/WINDOWS/Fonts/timesi.ttf><C:/WINDOWS/Fonts/timesbi.ttf><C:/WINDOWS/Fonts/tim
 es.ttf><C:/WINDOWS/Fonts/timesbd.ttf>
-Output written on resume_template.pdf (3 pages, 138000 bytes).
+Output written on resume_template.pdf (4 pages, 139342 bytes).
 
-PDF statistics: 50 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 1048576)
+PDF statistics: 54 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 1048576)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

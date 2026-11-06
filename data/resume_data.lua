@@ -35,9 +35,11 @@ return {
                                 "Built and implemented a 24/7 on‑call program with defined escalation paths, improving response consistency and reducing operational risk.",
                                 "Created runbooks, SOPs, and troubleshooting guides that raised technical readiness and reduced repeat incidents.",
                                 "Partnered across Infrastructure, Networking, Operations, Client Services, and Product to deliver reliable platform changes and resolve high‑impact issues.",
-                                "Produced executive‑recognized Jira dashboards and reporting that improved visibility into capacity, throughput, and delivery risk.",
-                                "Worked with senior leadership to assess team capacity, refine intake processes, and plan strategic operational changes.",
-                                "Led structured sprint planning cycles balancing planned work with production support, escalations, and release constraints."
+                                "Developed executive-facing Jira dashboards and delivery metrics used to prioritize work, forecast capacity, identify delivery risks, and support portfolio-level planning decisions.",
+                                "Partnered with senior leadership and internal stakeholders to evaluate demand, prioritize incoming work, manage delivery commitments, and align team capacity with organizational objectives.",
+                                "Facilitated work planning and prioritization processes that balanced strategic initiatives, operational support, production incidents, and release commitments, ensuring predictable delivery within available team capacity.",
+                                "Served as primary coordination point between engineering teams and internal business stakeholders, managing intake, clarifying requirements, negotiating priorities, and communicating delivery expectations.",
+                                "Regularly communicated project status, risks, dependencies, and resource constraints to leadership and internal customers, enabling informed decision-making and expectation management."
                             }
                         },
                         {
@@ -184,7 +186,10 @@ return {
                 "Cross‑functional coordination with Infrastructure, Networking, Operations, Client Services, and Product",
                 "Process design, workflow optimization, and continuous improvement",
                 "Organizational change leadership in regulated, client‑sensitive environments",
-                "Scaling teams, support models, and operational systems in fast‑growth settings"
+                "Scaling teams, support models, and operational systems in fast‑growth settings",
+                "Executive reporting, portfolio planning, and delivery risk management",
+                "Backlog management, work prioritization, and intake processes",
+                "Stakeholder communication and expectation management"
             }
         },
         {
