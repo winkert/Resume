@@ -48,7 +48,13 @@
         return (escaped:gsub("\n+", "\\\\"))
     end
 
-    resume_data = require("data\\resume_data")
+    local resume_data_path = "data\\resume_data"
+    if not (arg == nil) then
+        resume_data_path = "data\\" .. arg[2]
+    end
+
+    print("Using resume data file: " .. resume_data_path)
+    resume_data = require(resume_data_path)
 \end{luacode*}
 
 \hypersetup{
