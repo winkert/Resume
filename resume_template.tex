@@ -48,6 +48,7 @@
         return (escaped:gsub("\n+", "\\\\"))
     end
 
+    -- parameters are passed to the Lua script as a table called 'arg' and the first element is the name of the script itself, so we check if arg is not nil and then use arg[2] to get the second argument passed to the script
     local resume_data_path = "data\\resume_data"
     if not (arg == nil) then
         resume_data_path = "data\\" .. arg[2]
